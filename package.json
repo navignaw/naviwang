@@ -1,0 +1,25 @@
+{
+  "name": "naviwang",
+  "version": "1.0.0",
+  "description": "writer. game designer. Muse.",
+  "main": "main.js",
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d js/main.js",
+    "build": "NODE_ENV=production browserify js/main.js | uglifyjs -mc warnings=false > js/bundle.js && uglifycss css/style.css > css/bundle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navignaw/naviwang.git"
+  },
+  "author": "Navi Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navignaw/naviwang/issues"
+  },
+  "homepage": "https://github.com/navignaw/naviwang#readme",
+  "devDependencies": {
+    "uglify": "^0.1.5",
+    "uglifycss": "0.0.28",
+    "watchify": "^3.10.0"
+  }
+}
