@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/navignaw/naviwang#readme",
   "devDependencies": {
+    "browserify": "^16.1.0",
     "uglify": "^0.1.5",
     "uglifycss": "0.0.28",
     "watchify": "^3.10.0"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.6"
   }
 }
