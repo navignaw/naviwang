@@ -24,6 +24,8 @@
     "watchify": "^3.10.0"
   },
   "dependencies": {
+    "click-handler": "^1.1.2",
+    "smooth-scroll": "^12.1.5",
     "typed.js": "^2.0.6"
   }
 }
