@@ -64,8 +64,8 @@ a:visited {
   border-radius: 50%;
   max-height: 15vh;
   max-width: 15vw;
-  min-height: 200px;
-  min-width: 200px;
+  min-height: 120px;
+  min-width: 120px;
 }
 
 .raptor.bounce {
@@ -99,12 +99,36 @@ a:visited {
   height: 85vh;
 }
 
+@media only screen and (max-device-width: 480px) {
+  .section:first-child {
+    height: 92vh;
+  }
+}
+
+.middle {
+  margin-top: -40px;
+  text-align: center;
+  z-index:1;
+}
+
+.arrow-border {
+  background-color: #687c8e;
+  border-radius: 50%;
+  border: 2px solid #eaeaea;
+  border-bottom: none;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+}
+
 .arrow {
-  border-left: 50vw solid transparent;
-  border-right: 50vw solid transparent;
-  border-top: 15vh solid rgba(0,0,0,.2);
-  height: 0;
-  width: 0;
+  height: 80px;
+  width: 80px;
+  transition: transform .5s;
+}
+
+.arrow:hover {
+  transform: translateY(10px);
 }
 
 .typed {
