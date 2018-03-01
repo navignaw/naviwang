@@ -57,6 +57,7 @@ a:visited {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 200vh;
+  overflow-x: hidden;
 }
 
 .raptor {
@@ -92,6 +93,18 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+}
+
+.section:first-child {
+  height: 85vh;
+}
+
+.arrow {
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 15vh solid rgba(0,0,0,.2);
+  height: 0;
+  width: 0;
 }
 
 .typed {
