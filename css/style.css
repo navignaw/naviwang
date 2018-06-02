@@ -71,7 +71,7 @@ input {
   color: #d7e0ee;
 }
 
-.raptor {
+.profile {
   border-radius: 50%;
   max-height: 15vh;
   max-width: 15vw;
@@ -79,7 +79,7 @@ input {
   min-width: 120px;
 }
 
-.raptor.bounce {
+.profile.bounce {
   -webkit-animation: bounce 1s;
   -moz-animation: bounce 1s;
   animation: bounce 1s;
@@ -152,10 +152,6 @@ input {
   display: inline;
 }
 
-.scout-link {
-  width: 100%;
-}
-
 .title {
   font-family: 'EB Garamond', 'Helvetica', sans-serif;
   font-size: 2.5em;
@@ -164,6 +160,10 @@ input {
 
 .bottom {
   padding-bottom: 20px;
+}
+
+.release-date {
+  color: rgba(20,53,82,.8);
 }
 
 /* Blinking cursor for typed.js */
