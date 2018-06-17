@@ -162,8 +162,8 @@ input {
   padding-bottom: 20px;
 }
 
-.release-date {
-  color: rgba(20,53,82,.8);
+.kindle-link {
+  width: 100%;
 }
 
 /* Blinking cursor for typed.js */
