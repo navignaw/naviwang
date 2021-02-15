@@ -13,8 +13,8 @@ clickHandler.register('raptor', function(e) {
   e.preventDefault();
 });
 
-// Add smooth scrolling to novel link.
-new SmoothScroll('a[href*="#novel"]');
+// Add smooth scrolling to all links with data-scroll.
+new SmoothScroll('a[data-scroll]');
 
 // Type out pills.
 const keywords = new Typed('.typed', {

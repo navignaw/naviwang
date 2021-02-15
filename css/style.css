@@ -1,5 +1,5 @@
 body {
-  background-color: #e8e8e8;
+  background: #edf4ff;
   font-family: 'Lato', 'Helvetica', sans-serif;
   font-size: 16px;
   margin: 0;
@@ -46,11 +46,11 @@ input {
   text-decoration: none;
 }
 
-.banner .pill:nth-child(odd) {
+.banner .pill {
   color: #d7e0ee;
 }
 
-.banner .pill:nth-child(even) {
+.banner .pill[target="_blank"] {
   color: #9dd3ff;
 }
 
@@ -64,6 +64,10 @@ input {
   background-size: cover;
   max-height: 225vh;
   overflow-x: hidden;
+}
+
+.blue {
+  background-color: #edf4ff;
 }
 
 .dark {
@@ -97,6 +101,20 @@ input {
   width: auto;
 }
 
+.pos-rel {
+  position: relative;
+}
+
+.chefhat {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  margin-left: 15px;
+  margin-top: -30px;
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+}
+
 .section {
   align-items: center;
   text-align: center;
@@ -116,7 +134,11 @@ input {
   }
 }
 
-.section:last-child {
+.section#tmc {
+  min-height: 70vh;
+}
+
+.section#subscribe {
   min-height: 20vh;
   padding-bottom: 20px;
 }
@@ -158,6 +180,12 @@ input {
   padding: 0 25px;
 }
 
+.tmc {
+  font-family: 'Cabin', sans-serif;
+  font-size: 2.75em;
+  font-weight: 200;
+}
+
 .bottom {
   padding-bottom: 20px;
 }
@@ -192,18 +220,18 @@ input {
 }
 
 /* Bounce animation */
-@keyframes bounce { 
+@keyframes bounce {
   0%, 40%, 60%, 100% { transform: translateY(0); }
   30%, 70% { transform: translateY(5px); }
   50% { transform: translateY(-20px); }
-} 
-@-webkit-keyframes bounce { 
+}
+@-webkit-keyframes bounce {
   0%, 40%, 60%, 100% { transform: translateY(0); }
   30%, 70% { transform: translateY(5px); }
   50% { transform: translateY(-20px); }
-} 
-@-moz-keyframes bounce { 
+}
+@-moz-keyframes bounce {
   0%, 40%, 60%, 100% { transform: translateY(0); }
   30%, 70% { transform: translateY(5px); }
   50% { transform: translateY(-20px); }
-} 
+}
